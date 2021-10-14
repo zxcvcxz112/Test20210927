@@ -13,7 +13,7 @@ work = Document()
 if '家访表.docx' in listDir:
     work =  Document(os.getcwd()+'\家访表.docx')
     table = work.tables[0]
-    listDir = os.listdir()
+    #listDir = os.listdir()
 if '信息表格.xls' in listDir:
     work1= xlrd.open_workbook('信息表格.xls')
     sheet = work1.sheet_by_index(0)
